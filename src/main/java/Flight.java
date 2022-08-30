@@ -1,12 +1,13 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Flight {
 //      a destination, an id and a collection of passengers.
     private String destination;
     private int id;
-    private List<Passenger>passengerList;
+    private ArrayList<Passenger> passengerList;
 
-    public Flight (String destination, int id, List<Passenger> passengerList){
+    public Flight (String destination, int id, ArrayList<Passenger> passengerList){
         this.destination = destination;
         this.id = id;
         this.passengerList = passengerList;

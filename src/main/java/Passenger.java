@@ -5,13 +5,13 @@ public class Passenger {
     private String name;
     private String contactEmail;
     private String contactNumber;
-    private int id;
+    private int passengerID;
 
     public Passenger (String customerName, String contactEmail,String contactNumber, int id){
         this.name = customerName;
         this.contactEmail=contactEmail;
         this.contactNumber=contactNumber;
-        this.id = id;
+        this.passengerID = id;
     }
 
     public String getName() {
@@ -39,11 +39,11 @@ public class Passenger {
     }
 
     public int getId() {
-        return id;
+        return passengerID;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.passengerID = id;
     }
 
 //    public void addPassenger(){
