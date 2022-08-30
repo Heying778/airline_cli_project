@@ -1,12 +1,16 @@
 public class Passenger {
 
+//    a name, contact information and a unique identifier (id)
+
     private String name;
-    private String contactInformation;
+    private String contactEmail;
+    private String contactNumber;
     private int id;
 
-    public Passenger (String name, String contactInformation, int id){
+    public Passenger (String name, String contactEmail,String contactNumber, int id){
         this.name = name;
-        this.contactInformation = contactInformation;
+        this.contactEmail=contactEmail;
+        this.contactNumber=contactNumber;
         this.id = id;
     }
 
@@ -18,12 +22,20 @@ public class Passenger {
         this.name = name;
     }
 
-    public String getContactInformation() {
-        return contactInformation;
+    public String getContactEmail() {
+        return contactEmail;
     }
 
-    public void setContactInformation(String contactInformation) {
-        this.contactInformation = contactInformation;
+    public void setContactEmail(String contactEmail) {
+        this.contactEmail = contactEmail;
+    }
+
+    public String getContactNumber() {
+        return contactNumber;
+    }
+
+    public void setContactNumber(String contactNumber) {
+        this.contactNumber = contactNumber;
     }
 
     public int getId() {
