@@ -7,8 +7,8 @@ public class Passenger {
     private String contactNumber;
     private int id;
 
-    public Passenger (String name, String contactEmail,String contactNumber, int id){
-        this.name = name;
+    public Passenger (String customerName, String contactEmail,String contactNumber, int id){
+        this.name = customerName;
         this.contactEmail=contactEmail;
         this.contactNumber=contactNumber;
         this.id = id;
@@ -18,7 +18,7 @@ public class Passenger {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName() {
         this.name = name;
     }
 
