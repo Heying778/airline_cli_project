@@ -23,9 +23,9 @@ public enum Destination {
                 return true;
             }
         }
-
         return false;
     }
+
 
 
 }

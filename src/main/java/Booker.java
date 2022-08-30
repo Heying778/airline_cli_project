@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class Booker {
 
 
-//    PROPERTIES -------
+    //    PROPERTIES -------
     private ArrayList<Flight> flightArrayList;
     private ArrayList<Passenger> passengerArrayList;
 
-//    CONSTRUCTOR -------
+    //    CONSTRUCTOR -------
     public Booker(){
 
         flightArrayList = new ArrayList<>();
@@ -18,7 +18,7 @@ public class Booker {
 
 
     }
-//METHODS --------
+//      METHODS --------
 
 
 
@@ -87,6 +87,7 @@ public class Booker {
 
 
 //    Book a passenger onto a flight
+//    map the <passengerList> in flight + add new passenger names into the list  
 //    Cancel a flight
 
 
