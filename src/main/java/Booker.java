@@ -42,7 +42,7 @@ public class Booker {
         Scanner scanner = new Scanner(System.in);
         String destination = scanner.nextLine();
         for (Flight flight : flightArrayList){
-            if (destination == flight.getDestination()){
+            if (destination.equals(flight.getDestination())){
                 flightArrayList.remove(flight);
             } else {
                 System.out.println("No flights found matching that destination");
@@ -79,15 +79,22 @@ public class Booker {
         int ID = rand.nextInt(100);
 
         Passenger passenger = new Passenger(name,contactEmail,contactNumber,ID);
-
         passengerArrayList.add(passenger);
         System.out.println(passenger.getName() +" has been added to " + "flight list");
 
     }
 
     public void addPassengerToFlight(Passenger passenger, Flight flight){
-        passengerArrayList.add(passenger);
-        flight.setPassengerList(passengerArrayList);
+        ArrayList<Passenger> currentPassengerList =  flight.getPassengerList();
+        currentPassengerList.add(passenger);
+        flight.setPassengerList(currentPassengerList);
+
+//        flight.setPassengerList(passengerArrayList);
+        System.out.println("Passengers currently on this flight now are:");
+        for (Passenger p: currentPassengerList){
+            System.out.println(p.getName());
+        }
+
     }
 
     public Passenger getPassengerToAddToFlight(){
@@ -115,12 +122,6 @@ public class Booker {
 
         return null;
     }
-//    System.out.println("Which flight would you like to add passenger to?");
-//    String flight = scanner.nextLine();
-
-//    Book a passenger onto a flight
-//    map the <passengerList> in flight + add new passenger names into the list  
-//    Cancel a flight
 
 
 }

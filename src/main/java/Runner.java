@@ -31,9 +31,7 @@ public class Runner {
             booker.addPassenger();
 
         } else if (action == 4) {
-            // Need to book passenger onto flight
             booker.addPassengerToFlight(booker.getPassengerToAddToFlight(),booker.getFlightToAddPassengerTo());
-
 
         } else if (action == 5) {
             booker.removeFlight();
