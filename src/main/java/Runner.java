@@ -23,11 +23,11 @@ public class Runner {
             System.out.println(":::THIS IS A SELF-SERVICE SYSTEM:::");
             System.out.println("");
 
-            System.out.println(" To Add A New Flight Press 1");
-            System.out.println(" To Display All Available Flights Press 2");
-            System.out.println(" To Add A New Passenger Press 3");
-            System.out.println(" To Book A Passenger Onto A Flight Press 4");
-            System.out.println(" To Cancel A Flight Press 5");
+            System.out.println("1. To Add A New Flight");
+            System.out.println("2. To Display All Available Flights");
+            System.out.println("3. To Add A New Passenger");
+            System.out.println("4. To Book A Passenger Onto A Flight");
+            System.out.println("5. To Cancel A Flight");
 
             Scanner scanner2 = new Scanner(System.in);
             int action = scanner2.nextInt();
