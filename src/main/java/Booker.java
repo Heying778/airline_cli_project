@@ -85,6 +85,38 @@ public class Booker {
 
     }
 
+    public void addPassengerToFlight(Passenger passenger, Flight flight){
+        passengerArrayList.add(passenger);
+        flight.setPassengerList(passengerArrayList);
+    }
+
+    public Passenger getPassengerToAddToFlight(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is the name of the passenger?");
+        String passengerName = scanner.nextLine();
+        for (Passenger passenger: passengerArrayList){
+            if (passengerName.equals(passenger.getName())){
+                return passenger;
+            }
+        }
+
+        return null;
+    }
+
+    public Flight getFlightToAddPassengerTo(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Which flight would you like to add passenger to?");
+        String flightDestination = scanner.nextLine();
+        for (Flight flight: flightArrayList){
+            if (flightDestination.equals(flight.getDestination())){
+                return flight;
+            }
+        }
+
+        return null;
+    }
+//    System.out.println("Which flight would you like to add passenger to?");
+//    String flight = scanner.nextLine();
 
 //    Book a passenger onto a flight
 //    map the <passengerList> in flight + add new passenger names into the list  
