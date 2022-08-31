@@ -10,13 +10,13 @@ public class Booker {
     private ArrayList<Flight> flightArrayList;
     private ArrayList<Passenger> passengerArrayList;
 
+    private Destination destination;
+
     //    CONSTRUCTOR -------
     public Booker(){
 
         flightArrayList = new ArrayList<>();
         passengerArrayList = new ArrayList<>();
-
-
     }
 //      METHODS --------
 
@@ -110,6 +110,7 @@ public class Booker {
         return null;
     }
 
+
     public Flight getFlightToAddPassengerTo(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Which flight would you like to add passenger to?");
@@ -122,6 +123,24 @@ public class Booker {
 
         return null;
     }
+<<<<<<< HEAD
+=======
+
+    public Destination getDestination() {
+        return destination;
+    }
+
+    public void setDestination(Destination destination) {
+        this.destination = destination;
+    }
+
+    //    System.out.println("Which flight would you like to add passenger to?");
+//    String flight = scanner.nextLine();
+
+//    Book a passenger onto a flight
+//    map the <passengerList> in flight + add new passenger names into the list  
+//    Cancel a flight
+>>>>>>> 2420b7fee8367ac99ac9036d398fcb729ed92075
 
 
 }
