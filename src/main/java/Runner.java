@@ -37,11 +37,11 @@ public class Runner {
                 booker.addFlight();
 
             } else if (action == 2) {
-//            booker.displayFlights();
-                for (Destination destination : Destination.values()) {
-                    System.out.println(destination);
-
-                }
+            booker.displayFlights();
+//                for (Destination destination : Destination.values()) {
+//                    System.out.println(destination);
+//
+//                }
 
             } else if (action == 3) {
                 booker.addPassenger();
@@ -66,7 +66,7 @@ public class Runner {
 
             }
 
-//        }
+
 
             Runner.greet();
 
