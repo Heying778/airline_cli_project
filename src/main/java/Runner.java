@@ -5,15 +5,18 @@ public class Runner {
 
     static Booker booker = new Booker();
 
-    public static void greet() {
-        System.out.println("WELCOME TO Team 5's TRAVELS! Press \"E\" to Exit & \"ENTER\" To Continue");
+    public static void greet () throws InterruptedException {
+        System.out.println(" 🛫 WELCOME To EasyTRAVELS! 🛬");
+        Thread.sleep(1000); // 1000ms = 1s
+        System.out.println("Press \"E\" to Exit or \"ENTER\" To Continue");
+
         Scanner scanner1 = new Scanner(System.in);
         String userChoice = scanner1.nextLine();
 
 //        if user input is Y, Options are printed, else it prints "thank you..." and ends"
         scanner1.nextLine();
         if (userChoice.equals("e")) {
-            System.out.println("Thank You For Using Our Services");
+            System.out.println("Thank You For Using Our Services.");
         } else {
 
             System.out.println(" To add a new flight press 1");
@@ -52,6 +55,8 @@ public class Runner {
             Runner.greet();
 
         }
+
+
 
 
     }

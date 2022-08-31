@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Runner.greet();
+    public static void main(String[] args) throws InterruptedException {
+        Runner.greet() ;
 
     }
 
