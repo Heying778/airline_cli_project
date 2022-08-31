@@ -1,7 +1,7 @@
 import java.io.FileWriter;
 import java.io.PrintWriter;
 
-
+//ADVANCED extension
 //files stored on your system and add functionality to
 // store the records of flights and passengers to their
 // own files.
@@ -28,6 +28,7 @@ public class Saver {
         String flightData =id+"||"+destination+"||"+passengerList ;//This is the data in the output file
         String passengerData =passengerID+"||"+name+"||"+contactEmail+"||"+contactNumber;//This is the data in the output file
 
+        // in case there is only flight or passenger added, not both, therefore try(){}
         try (PrintWriter out = new PrintWriter("flightData.txt")) {
             out.println(flightData);
         }
