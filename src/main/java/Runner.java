@@ -6,15 +6,15 @@ public class Runner {
     static Booker booker = new Booker();
 
     public static void greet() {
-        System.out.println("WELCOME TO Team 5's TRAVELS! Press enter to continue");
+        System.out.println("WELCOME TO Team 5's TRAVELS! Press \"E\" to Exit & \"ENTER\" To Continue");
         Scanner scanner1 = new Scanner(System.in);
         String userChoice = scanner1.nextLine();
 
 //        if user input is Y, Options are printed, else it prints "thank you..." and ends"
         scanner1.nextLine();
-        if (userChoice.equals("y")) {
-        } else {
+        if (userChoice.equals("e")) {
             System.out.println("Thank You For Using Our Services");
+        } else {
 
             System.out.println(" To add a new flight press 1");
             System.out.println(" To display all available flights press 2");
