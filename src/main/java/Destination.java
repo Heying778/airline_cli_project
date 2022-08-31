@@ -16,16 +16,4 @@ public enum Destination {
     SYDNEY,
     CYPRUS;
 
-    public static boolean destinationCheck(String destination) {
-        destination = destination.toUpperCase();
-        for (Destination location : Destination.values()) {
-            if (location.name().equals(destination)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-
-
 }

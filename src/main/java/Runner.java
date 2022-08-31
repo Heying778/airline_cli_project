@@ -40,9 +40,15 @@ public class Runner {
 
         }
 
+        for (Destination destination : Destination.values()) {
+            System.out.println(destination);
+
+        }
+
         Runner.greet();
 
     }
+
 
     }
 
